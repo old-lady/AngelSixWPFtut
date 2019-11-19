@@ -5,6 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AngelSixWPFtut"
         mc:Ignorable="d"
+        
+        Loaded="Window_Loaded"
         Title="WPF basics" Height="600" Width="400"
         
         >
@@ -75,33 +77,33 @@
                     </Grid.ColumnDefinitions>
                     <!-- Column 1 -->
                     <StackPanel Grid.Column="0" Margin="0 0 10 0">
-                        <CheckBox x:Name="WeldCheckbox" Content="Weld"/>
-                        <CheckBox x:Name="AssamblyCheckbox" Content="Assembly"/>
-                        <CheckBox x:Name="PlasmaCheckbox" Content="Plasma"/>
-                        <CheckBox x:Name="LaserCheckbox" Content="Laser"/>
-                        <CheckBox x:Name="PurchaseCheckbox" Content="Purchase"/>
+                        <CheckBox Checked="Checkbox_Checked" x:Name="WeldCheckbox" Content="Weld"/>
+                        <CheckBox Checked="Checkbox_Checked" x:Name="AssamblyCheckbox" Content="Assembly"/>
+                        <CheckBox Checked="Checkbox_Checked" x:Name="PlasmaCheckbox" Content="Plasma"/>
+                        <CheckBox Checked="Checkbox_Checked" x:Name="LaserCheckbox" Content="Laser"/>
+                        <CheckBox Checked="Checkbox_Checked" x:Name="PurchaseCheckbox" Content="Purchase"/>
                     </StackPanel>
                     <!-- Column 2 -->
                     <StackPanel Grid.Column="1" Margin="10 0 0 0">
-                        <CheckBox x:Name="LatheCheckbox" Content="Lathe"/>
-                        <CheckBox x:Name="DrillCheckbox" Content="Drill"/>
-                        <CheckBox x:Name="FoldCheckbox" Content="Fold"/>
-                        <CheckBox x:Name="RollCheckbox" Content="Roll"/>
-                        <CheckBox x:Name="SawCheckbox" Content="Saw"/>
+                        <CheckBox Checked="Checkbox_Checked" x:Name="LatheCheckbox" Content="Lathe"/>
+                        <CheckBox Checked="Checkbox_Checked" x:Name="DrillCheckbox" Content="Drill"/>
+                        <CheckBox Checked="Checkbox_Checked" x:Name="FoldCheckbox" Content="Fold"/>
+                        <CheckBox Checked="Checkbox_Checked" x:Name="RollCheckbox" Content="Roll"/>
+                        <CheckBox Checked="Checkbox_Checked" x:Name="SawCheckbox" Content="Saw"/>
                     </StackPanel>
                 </Grid>
 
                 <!--Length-->
                 <TextBlock Text="Length"/>
-                <TextBox Padding="5"/>
+                <TextBox x:Name="LengthText" Padding="5"/>
 
                 <!--Mass-->
                 <TextBlock Text="Mass"/>
-                <TextBox IsReadOnly="True" Background="#eee" Padding="5"/>
+                <TextBox x:Name="MassText" IsReadOnly="True" Background="#eee" Padding="5"/>
 
                 <!--Finish-->
                 <TextBlock Text="Finish"/>
-                <ComboBox SelectedIndex="0" Padding="5">
+                <ComboBox Name="FinishDropdown" SelectionChanged="FinishDropdown_SelectionChanged" SelectedIndex="0" Padding="5">
                     <ComboBoxItem>Painted</ComboBoxItem>
                     <ComboBoxItem>Not Painted</ComboBoxItem>
                 </ComboBox>
@@ -115,7 +117,7 @@
 
                 <!--Supplier Name-->
                 <TextBlock Text="Supplier Name"/>
-                <TextBox Padding="5"/>
+                <TextBox x:Name="SupplierNameText" TextChanged="SupplierNameText_TextChanged" Padding="5"/>
                 <!--Supplier Code-->
                 <TextBlock Text="Supplier Code"/>
                 <TextBox Padding="5"/>
@@ -124,8 +126,8 @@
                 <TextBlock Text="Additional Information" FontWeight="Bold" Margin="0 10"/>
 
                 <!-- Note -->
-                <TextBlock Text="Note"/>
-                <TextBox Padding="5"/>
+                <TextBlock  Text="Note"/>
+                <TextBox x:Name="NoteText" Padding="5"/>
             </StackPanel>
         </Border>
     </ScrollViewer>
@@ -133,6 +135,10 @@
 </Window>
 
 <!--Notes
+    
+    isreadonly vs isenabled
+    readonly needs no color ajustment
+    readonly you can copy text out
     
     Padding goes on the inside
     Margin on the outside
