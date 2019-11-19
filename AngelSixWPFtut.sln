@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29503.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AngelSixWPFtut", "AngelSixWPFtut\AngelSixWPFtut.csproj", "{3EF45419-EC4A-4CEF-876F-DDA74985B0E9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3EF45419-EC4A-4CEF-876F-DDA74985B0E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3EF45419-EC4A-4CEF-876F-DDA74985B0E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3EF45419-EC4A-4CEF-876F-DDA74985B0E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3EF45419-EC4A-4CEF-876F-DDA74985B0E9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {38ABD9C1-4A1C-4681-8275-806DBFBDB731}
+	EndGlobalSection
+EndGlobal

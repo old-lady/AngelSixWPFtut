@@ -1,0 +1,149 @@
+﻿<Window x:Class="AngelSixWPFtut.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AngelSixWPFtut"
+        mc:Ignorable="d"
+        Title="WPF basics" Height="600" Width="400"
+        
+        >
+
+    <ScrollViewer ScrollViewer.VerticalScrollBarVisibility="Auto">
+        <Border Name="Border" Padding="10">
+
+            <StackPanel>
+                <!-- Buttons -->
+
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Button x:Name="ApplyButton" Click="ApplyButton_Click" Margin="0 0 10 0" Grid.Column="0">Apply</Button>
+                    <Button x:Name="ResetButton" Click="ResetButton_Click" Grid.Column="1">Reset</Button>
+                    <Button Margin="10 0 0 0" Grid.Column="2">refresh</Button>
+                </Grid>
+
+                <TextBlock Text="Pulse Properties" FontWeight="Bold" Margin="0 10"/>
+                <!--Description-->
+                <TextBlock Text="Description"/>
+                <TextBox x:Name="DescriptionText" Padding="5"/>
+
+                <!-- Status and Revision -->
+                <StackPanel>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="2*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <!-- Status -->
+                        <StackPanel Grid.Column="0" Margin="0 0 10 0">
+                            <TextBlock Text="Status"/>
+                            <TextBox IsReadOnly="True" Background="#eee" Padding="5"/>
+                        </StackPanel>
+                        <!-- Revision -->
+                        <StackPanel Grid.Column="1" Margin="10 0 0 0">
+                            <TextBlock Text="Revision"/>
+                            <TextBox IsReadOnly="True" Background="#eee" Padding="5"/>
+                        </StackPanel>
+                    </Grid>
+                </StackPanel>
+
+                <!-- Part number -->
+                <TextBlock Text="Part Number"/>
+                <TextBox IsReadOnly="True" Background="#eee" Padding="5"/>
+
+                <!--Raw Material-->
+                <TextBlock Text="Raw Material" FontWeight="Bold" Margin="0 10"/>
+                <!--Material-->
+                <TextBlock Text="Material"/>
+                <ComboBox Padding="5"/>
+
+                <!--Manufacturing Information-->
+                <TextBlock Text="Manufacturing Information" FontWeight="Bold" Margin="0 10"/>
+
+                <!--Work centers-->
+                <TextBlock Text="Work centers" Margin="0 0 0 10"/>
+
+                <!--Checkboxes-->
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <!-- Column 1 -->
+                    <StackPanel Grid.Column="0" Margin="0 0 10 0">
+                        <CheckBox x:Name="WeldCheckbox" Content="Weld"/>
+                        <CheckBox x:Name="AssamblyCheckbox" Content="Assembly"/>
+                        <CheckBox x:Name="PlasmaCheckbox" Content="Plasma"/>
+                        <CheckBox x:Name="LaserCheckbox" Content="Laser"/>
+                        <CheckBox x:Name="PurchaseCheckbox" Content="Purchase"/>
+                    </StackPanel>
+                    <!-- Column 2 -->
+                    <StackPanel Grid.Column="1" Margin="10 0 0 0">
+                        <CheckBox x:Name="LatheCheckbox" Content="Lathe"/>
+                        <CheckBox x:Name="DrillCheckbox" Content="Drill"/>
+                        <CheckBox x:Name="FoldCheckbox" Content="Fold"/>
+                        <CheckBox x:Name="RollCheckbox" Content="Roll"/>
+                        <CheckBox x:Name="SawCheckbox" Content="Saw"/>
+                    </StackPanel>
+                </Grid>
+
+                <!--Length-->
+                <TextBlock Text="Length"/>
+                <TextBox Padding="5"/>
+
+                <!--Mass-->
+                <TextBlock Text="Mass"/>
+                <TextBox IsReadOnly="True" Background="#eee" Padding="5"/>
+
+                <!--Finish-->
+                <TextBlock Text="Finish"/>
+                <ComboBox SelectedIndex="0" Padding="5">
+                    <ComboBoxItem>Painted</ComboBoxItem>
+                    <ComboBoxItem>Not Painted</ComboBoxItem>
+                </ComboBox>
+
+                <!--Purchase information-->
+                <TextBlock Text="Purchase Information"/>
+                <ComboBox SelectedIndex="0" Padding="5">
+                    <ComboBoxItem>Rubber</ComboBoxItem>
+                    <ComboBoxItem>Not Rubber</ComboBoxItem>
+                </ComboBox>
+
+                <!--Supplier Name-->
+                <TextBlock Text="Supplier Name"/>
+                <TextBox Padding="5"/>
+                <!--Supplier Code-->
+                <TextBlock Text="Supplier Code"/>
+                <TextBox Padding="5"/>
+
+                <!--Additional Information-->
+                <TextBlock Text="Additional Information" FontWeight="Bold" Margin="0 10"/>
+
+                <!-- Note -->
+                <TextBlock Text="Note"/>
+                <TextBox Padding="5"/>
+            </StackPanel>
+        </Border>
+    </ScrollViewer>
+
+</Window>
+
+<!--Notes
+    
+    Padding goes on the inside
+    Margin on the outside
+    
+    
+    -->
+<!--<StackPanel Orientation="Horizontal">
+                <Button>ok</Button>
+                <Button>ok</Button>
+                <Button>ok</Button>
+                <Button>ok</Button>
+            </StackPanel>-->
+<!--<ColumnDefinition Width="2*"/>-->
+    
