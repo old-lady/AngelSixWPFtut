@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Comment CommentText="View Model&#xD;&#xA;">
+    <Position X="4.403" Y="1.074" Height="0.314" Width="0.861" />
+  </Comment>
+  <Comment CommentText="DataModel">
+    <Position X="10.348" Y="1.074" Height="0.314" Width="0.861" />
+  </Comment>
+  <Class Name="Video03.App" Collapsed="true">
+    <Position X="2" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>App.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Video03.DirectoryItem">
+    <Position X="9" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Directoy\Data\DirectoryItem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Video03.DirectoryStructure">
+    <Position X="9" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAIAQAAAAAAQAAAAAAAAAAAA=</HashCode>
+      <FileName>Directoy\DirectoryStructure.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Video03.BaseViewModel">
+    <Position X="4.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Directoy\ViewModels\BaseViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Video03.DirectoryItemViewModel">
+    <Position X="2.75" Y="3.25" Width="1.5" />
+    <InheritanceLine Type="Video03.BaseViewModel" ManuallyRouted="true" FixedToPoint="true">
+      <Path>
+        <Point X="5" Y="3.103" />
+        <Point X="5" Y="4.376" />
+        <Point X="4.332" Y="4.376" />
+        <Point X="4.332" Y="3.5" />
+        <Point X="4.25" Y="3.5" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>GQAAEQAAAAAAAAAAAAAEAAQAAAgAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Directoy\ViewModels\DirectoryItemViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Video03.DirectoryStructureViewModel">
+    <Position X="5.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Directoy\ViewModels\DirectoryStructureViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Video03.RelayCommand" BaseTypeListCollapsed="true">
+    <Position X="11" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACAAQAAEAAAAAgAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Directoy\ViewModels\RelayCommand.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Video03.ExampleViewModel" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="5.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAEEAAAAAAAAgAAAAAAAAABACAAAAAA=</HashCode>
+      <FileName>ExampleViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Video03.HeaderToImageConverter" BaseTypeListCollapsed="true">
+    <Position X="11" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIAAAAAAAAgAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>HeaderToImageConverter.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Video03.MainWindow" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MainWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Video03.Properties.Resources" Collapsed="true">
+    <Position X="3.5" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Video03.Properties.Settings" Collapsed="true">
+    <Position X="2" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="Video03.DirectoryItemType">
+    <Position X="9" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAEgAAAAAAAAAAABAA=</HashCode>
+      <FileName>Directoy\Data\DirectoryItemType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

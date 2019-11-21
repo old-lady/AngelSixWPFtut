@@ -75,6 +75,7 @@ namespace Video02
 
         #endregion
 
+
         #region Folder Expanded
         /// <summary>
         /// When a folder is expanded, find the subfolders/ files
@@ -187,7 +188,7 @@ namespace Video02
 
                     // filename
                     //Header = Path.GetFileName(filePath),
-                    Header = GetFileFolderName(filePath),
+                    Header = MainWindow.GetFileFolderName(filePath),
                     // filepath
                     Tag = filePath,
                 };
@@ -219,7 +220,7 @@ namespace Video02
             // c:\something\a file.png
 
             // if we have no path, return empty
-            if (string.IsNullOrEmpty(path)) 
+            if (string.IsNullOrEmpty(path))
                 return string.Empty;
 
             var normalizedPath = path.Replace('/', '\\');
@@ -230,7 +231,7 @@ namespace Video02
             // if we don't find a backslash (or there is only one and the path starts with it)
             // we asume it is a filename, so we can return the path itself
 
-            if (lastIndex <= 0) 
+            if (lastIndex <= 0)
                 return path;
 
             // else return everything after the last backslash (does not matter if it is path, or normalized path, index is the same)
@@ -238,5 +239,7 @@ namespace Video02
 
         }
         #endregion
+
+
     }
 }
