@@ -16,6 +16,7 @@ namespace Video03
     // Obsolete
     // this is made to work with fody nuget package only?
     //[ImplementPropertyChanged]
+    [AddINotifyPropertyChangedInterface]
     public class ExampleViewModel : INotifyPropertyChanged
     {
         //private string test;

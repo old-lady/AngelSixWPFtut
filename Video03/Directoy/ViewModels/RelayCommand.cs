@@ -44,7 +44,7 @@ namespace Video03
         /// <summary>
         /// a relay command can always execute
         /// </summary>
-        /// <param name="parameter"></param>
+        /// <param name="parameter"></pa    ram>
         /// <returns></returns>
         public bool CanExecute(object parameter) { return true; }
 
